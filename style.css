@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    background-color: #0D152D;
+
+}
+
+body{
+    margin: 0;
+}
+
+li,a,button{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+
+}
+.LOGO{
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: auto;
+}
+.nav-links {
+    list-style: none; 
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+    color: #607fdd;
+}   
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #35436D;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #607fdd;
+}
+
+
+
+
+
+.container{
+    margin: 100px auto;
+    padding: 100px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+   
+
+}
+
+.image-profile{
+    max-width: 300px;
+     float: right;
+     border-radius: 30px;
+     border: 3px solid  white;
+     transition: 1s;
+
+  }
+
+  .image-profile:hover{
+        transform: scale(1.1);
+  }
+
+.main-text{
+   margin-left: 30px;
+   margin-top: 50px;
+
+}
+
+
+.main-text h1{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+  
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+ }
+
+ @keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 300%;
+    }
+ }
+
+.main-text h2{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+   
+
+
+}
+
+.main-text p{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+.main-font{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+/*
+.social-container{
+   display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    padding: 50px;
+}
+
+.icons a {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    
+}
+
+
+
+.social-text{
+    color: white;
+}
+*/
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons a {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.icons a:hover{
+    opacity: 0.5;
+}
+
+.social-text {
+    color: white;
+    margin-top: 10px; /* Add margin to create space between icons and text */
+    text-align: center;
+    opacity: 0.5;
+}
